@@ -2,12 +2,18 @@ import Board from "./Board.js";
 
 var board = new Board();
 
-console.log(board.getBoard());
+const inputList = document.querySelectorAll("input");
+const button = document.getElementById("but");
 
-board.markSquare("b2");
+inputList.forEach((input) => {
+  input.addEventListener("click", () => {
+    board.markSquare(input.id);
+  });
+});
 
-console.log(board.getBoard());
-
-board.markSquare("b4");
-
-console.log(board.getBoard());
+button.addEventListener("click", () => {
+  inputList.forEach((input) => {
+    input.value = "";
+  });
+  board.reset();
+});

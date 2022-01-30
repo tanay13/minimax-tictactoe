@@ -6,6 +6,7 @@ h1 {
 }
 
 /* 3*3 Grid */
+#b0,
 #b1,
 #b2,
 #b3,
@@ -13,8 +14,7 @@ h1 {
 #b5,
 #b6,
 #b7,
-#b8,
-#b9 {
+#b8 {
   width: 80px;
   height: 52px;
   margin: auto;
