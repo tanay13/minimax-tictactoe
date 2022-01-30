@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS file Included -->
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+
+  <body>
+    <div id="main">
+      <h1>TIC TAC TOE</h1>
+
+      <!-- Game Instructions -->
+      <p id="ins">
+        Game starts by just Tap on box<br /><br />First Player starts as
+        <b>Player X</b><br />And<br />Second Player as <b>Player 0</b>
+      </p>
+
+      <br /><br />
+      <!-- 3*3 grid of Boxes -->
+      <input type="text" id="b1" readonly />
+
+      <input type="text" id="b2" readonly />
+
+      <input type="text" id="b3" readonly />
+      <br /><br />
+
+      <input type="text" id="b4" readonly />
+
+      <input type="text" id="b5" readonly />
+
+      <input type="text" id="b6" readonly />
+      <br /><br />
+
+      <input type="text" id="b7" readonly />
+
+      <input type="text" id="b8" readonly />
+
+      <input type="text" id="b9" readonly />
+
+      <!-- Grid end here -->
+      <br /><br /><br />
+      <!-- Button to reset game -->
+      <button id="but">RESET</button>
+
+      <br /><br />
+      <!-- Space to show player turn -->
+      <p id="print"></p>
+    </div>
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>
