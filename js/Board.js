@@ -108,10 +108,11 @@ export default class Board {
 
     if (res.winner === "X") alert("X wins");
 
-    console.log(res);
     this.play();
+
     res = this.result();
-    if (res.winner === "O") alert("Y wins");
+
+    if (res.winner === "O") alert("O wins");
   }
 
   play() {
@@ -166,7 +167,7 @@ export default class Board {
 
     var bestMove;
     if (!maximize) {
-      var bestScore = 10000;
+      var bestScore = Infinity;
       for (var i = 0; i < moves.length; i++) {
         if (moves[i].score < bestScore) {
           bestScore = moves[i].score;
@@ -174,7 +175,7 @@ export default class Board {
         }
       }
     } else {
-      var bestScore = -10000;
+      var bestScore = -Infinity;
       for (var i = 0; i < moves.length; i++) {
         if (moves[i].score > bestScore) {
           bestScore = moves[i].score;
